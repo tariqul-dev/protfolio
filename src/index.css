@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap');
+html{
+  height: 100%;
+  position: relative;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,136 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Mulish', sans-serif;
+  /* font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif; */
+  /* display: flex;
+  flex-direction: column; */
+  /* height: 100vh; */
+  height: 100%;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  color: rgb(124, 120, 116);
+}
+
+.navbar{
+  background-color: #fff !important;
+}
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.navbar a:hover{
+  color: #3958db !important;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar-nav .active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+  color: #3958db !important;
+}
+
+.btn{
+  border-radius: 20px;
+}
+
+.brand-name{
+  color: #3958db;
+}
+
+.header-img img{
+  border-radius: 20px;
+  
+}
+/* .header-img{
+  background-color: red;
+} */
+
+/* .left{
+  background-color: red;
+} */
+
+
+/* .nav_col{
+  background-color: green !important;
+}
+.banner_col{
+  background-color: red;
+} */
+
+.header-img{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@media(max-width: 991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active{
+    border-bottom: none;
+  }
+}
+
+
+
+/* service */
+
+/* .service img{
+  width: 20%;
+} */
+
+/* contact */
+.contact textarea{
+  height: 10rem;
+}
+
+/* footer */
+
+
+footer p{
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
 }
